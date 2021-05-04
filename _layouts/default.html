@@ -1,25 +1,32 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="en-US">
   <head>
 
-    {% if site.google_analytics %}
-      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '{{ site.google_analytics }}');
-      </script>
-    {% endif %}
+
     <meta charset="UTF-8">
 
-{% seo %}
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>faq | FAQ and Knowledgebase for XIVLauncher</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="faq" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="FAQ and Knowledgebase for XIVLauncher" />
+<meta property="og:description" content="FAQ and Knowledgebase for XIVLauncher" />
+<link rel="canonical" href="https://goatcorp.github.io/faq/" />
+<meta property="og:url" content="https://goatcorp.github.io/faq/" />
+<meta property="og:site_name" content="faq" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="faq" />
+<script type="application/ld+json">
+{"description":"FAQ and Knowledgebase for XIVLauncher","url":"https://goatcorp.github.io/faq/","@type":"WebSite","headline":"faq","name":"faq","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="{{ '/style.css' }}">
+    <link rel="stylesheet" href="style.css">
 
     <style>
       .page-header {
@@ -31,24 +38,63 @@
   <body>
     <header class="page-header" role="banner">
       <h1 class="project-name">XIVLauncher Help</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      {% if site.github.is_project_page %}
+      <h2 class="project-tagline">FAQ and Knowledgebase for XIVLauncher</h2>
+
         <a href="https://github.com/goatcorp/FFXIVQuickLauncher/releases/latest" class="btn">Download XIVLauncher</a>
         <a href="https://goatcorp.github.io/faq" class="btn">All FAQs</a>
-      {% endif %}
-      {% if site.show_downloads %}
-        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-      {% endif %}
+
+
     </header>
 
     <main id="content" class="main-content" role="main">
-      {{ content }}
+      <style>
+  .btnm {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: rgba(29 29 29);
+    background-color: rgba(0 0 0 / 8%);
+    border-color: rgba(0 0 0 / 20%);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.3rem;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+    padding: 1rem 4rem;
+}
+
+.btnm:hover {
+    text-decoration: none;
+    color: rgba(29 29 29);
+    background-color: rgba(0 0 0 / 30%);
+    border-color: rgba(0 0 0 / 60%);
+}
+</style>
+
+<div style="text-align: center;">
+Please select a category from below:
+<br />
+<br />
+
+<div>
+
+<a href="https://goatcorp.github.io/faq/xl_troubleshooting" class="btnm">Help for XIVLauncher</a>
+
+<a href="https://goatcorp.github.io/faq/dalamud_troubleshooting" class="btnm">Help for plugins</a>
+
+</div>
+</div>
+
+<p><br />
+<br /></p>
+
+<div>
+If you cannot find what you're looking for, please join our <a href="https://discord.gg/3NMcUV5">Discord server</a> and ask in your support channels. We'd love to help!
+</div>
+
 
       <footer class="site-footer">
-        {% if site.github.is_project_page %}
-          <span><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>. If you see any mistakes, feel free to create an issue/PR!</span>
-        {% endif %}
+
+          <span><a href="https://github.com/goatcorp/faq">faq</a> is maintained by <a href="https://github.com/goatcorp">goatcorp</a>. If you see any mistakes, feel free to create an issue/PR!</span>
+
       </footer>
     </main>
   </body>
