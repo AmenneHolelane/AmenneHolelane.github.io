@@ -1,55 +1,42 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
+<style>
+  .btnm {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: rgba(29 29 29);
+    background-color: rgba(0 0 0 / 8%);
+    border-color: rgba(0 0 0 / 20%);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.3rem;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+    padding: 1rem 4rem;
+}
 
-    {% if site.google_analytics %}
-      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '{{ site.google_analytics }}');
-      </script>
-    {% endif %}
-    <meta charset="UTF-8">
+.btnm:hover {
+    text-decoration: none;
+    color: rgba(29 29 29);
+    background-color: rgba(0 0 0 / 30%);
+    border-color: rgba(0 0 0 / 60%);
+}
+</style>
 
-{% seo %}
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="{{ '/style.css' }}">
+<div style="text-align: center;">
+Please select a category from below:
+<br>
+<br>
 
-    <style>
-      .page-header {
-        background-image: linear-gradient(120deg, #132f46, #378dff) !important;
-        background-color: #378dff !important;
-      }
-    </style>
-  </head>
-  <body>
-    <header class="page-header" role="banner">
-      <h1 class="project-name">XIVLauncher Help</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      {% if site.github.is_project_page %}
-        <a href="https://github.com/goatcorp/FFXIVQuickLauncher/releases/latest" class="btn">Download XIVLauncher</a>
-        <a href="https://goatcorp.github.io/faq" class="btn">All FAQs</a>
-      {% endif %}
-      {% if site.show_downloads %}
-        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-      {% endif %}
-    </header>
+<div>
 
-    <main id="content" class="main-content" role="main">
-      {{ content }}
+<a href="https://goatcorp.github.io/faq/xl_troubleshooting" class="btnm">Help for XIVLauncher</a>
 
-      <footer class="site-footer">
-        {% if site.github.is_project_page %}
-          <span><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>. If you see any mistakes, feel free to create an issue/PR!</span>
-        {% endif %}
-      </footer>
-    </main>
-  </body>
-</html>
+<a href="https://goatcorp.github.io/faq/dalamud_troubleshooting" class="btnm">Help for plugins</a>
+
+</div>
+</div>
+
+<br>
+<br>
+
+<div>
+If you cannot find what you're looking for, please join our <a href="https://discord.gg/3NMcUV5">Discord server</a> and ask in your support channels. We'd love to help!
+</div>
