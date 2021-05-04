@@ -38,5 +38,5 @@ Please select a category from below:
 <br>
 
 <div>
-If you cannot find what you're looking for, please join our <a href="https://discord.gg/3NMcUV5">Discord server</a> and ask in your support channels. We'd love to help!
+If you cannot find what you're looking for, please join our Discord Server (LINK HERE) and ask in your support channels. We'd love to help!
 </div>
